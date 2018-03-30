@@ -15,7 +15,7 @@ open class DayViewController: UIViewController, EventDataSource, DayViewDelegate
     view.tintColor = UIColor.red
     dayView.dataSource = self
     dayView.delegate = self
-    dayView.reloadData()
+    reloadData()
 
     let sizeClass = traitCollection.horizontalSizeClass
     configureDayViewLayoutForHorizontalSizeClass(sizeClass)
